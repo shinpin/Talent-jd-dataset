@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "如果您使用本資料集，請引用以下 DOI"
+type: dataset
+title: "JD Coded Dataset for AJF Framework Study"
+authors:
+  - family-names: "Lee"
+    given-names: "Shih-Pin"
+    name-particle: "(Ben)"
+    affiliation: "華梵大學 美術與文創學系（跨智慧科技學系） / Huafan University, Dept. of Fine Arts and Cultural & Creative Industries"
+    email: "benarcell@gmail.com"
+date-released: 2026-05-29
+version: "v1.0"
+doi: 10.5281/zenodo.20444031
+url: "https://doi.org/10.5281/zenodo.20444031"
+repository-code: "https://github.com/shinpin/Talent-jd-dataset"
+license: CC-BY-4.0
+keywords:
+  - design talent
+  - AI collaboration
+  - AJF framework
+  - skill transformation
+  - greater china
+  - taiwan
+  - job description
+  - academic research
+abstract: >-
+  本資料集為〈AI 時代美術職能變化之探索性研究〉論文之佐證資料。
+  內容為大中華地區（台灣為主）2023-2026 年期間，設計、產品、
+  工程、資料、美術等職缺之編碼化、去識別化樣本，共 51 筆
+  （現況 31 + 基線 20）。採 AJF 框架四層編碼。
