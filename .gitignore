@@ -16,3 +16,7 @@ __pycache__/
 # 草稿
 drafts/
 *_draft.*
+
+# Python 編譯快取
+*.pyc
+__pycache__/
