@@ -20,3 +20,8 @@ drafts/
 # Python 編譯快取
 *.pyc
 __pycache__/
+
+# === 論文 PDF（投稿期間暫不公開）===
+paper/
+*.pdf
+!docs/*.pdf

@@ -1,134 +1,161 @@
 # JD Coded Dataset for AJF Framework Study
 
-**論文**：感知覺醒於 AI 協作職能轉化中的角色：AJF 框架之探索性建構  
-**作者**：李世彬（Lee Ben）  
-**機構**：華梵大學 美術與文創學系（跨智慧科技學系）  
-**指導教授**：唐政元 教授  
-**會議**：2026 智慧生活科技與管理研討會（SLTM 2026）  
-**聯絡**：benarcell@gmail.com  
-**版本**：v1.0  
-**發布日期**：2026-05-29
+> **大中華區美術設計人才市場職缺編碼資料集 (2025-2026)**
+> JD × AJF 三維交叉比對 ｜ Talent- 人才策略系列 v1.0
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20444031.svg)](https://doi.org/10.5281/zenodo.20444031)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Status: v1.0](https://img.shields.io/badge/Status-v1.0-green.svg)]()
 
 ---
 
-## 一、資料集概述
-
-本資料集為〈感知覺醒於 AI 協作職能轉化中的角色：AJF 框架之探索性建構〉論文之**佐證資料**。內容為大中華地區（台灣、中國、香港）2023–2026 年期間，設計、產品、工程、資料、美術等職缺之**編碼化、去識別化**樣本，共 **82 筆**。
+## 📋 基本資訊
 
 | 項目 | 內容 |
 |---|---|
-| 取樣期間（主樣本） | 2025 年 5 月 – 2026 年 5 月 |
-| 取樣期間（基線對照） | 2023 年 – 2024 年 |
-| 樣本數 | 82 筆（主樣本 62 + 基線 20） |
-| 地理範圍 | 台灣、中國、香港、遠端 |
-| 職務範圍 | 設計、產品、工程、資料、美術 |
-| 編碼層級 | AJF 框架四層（L1 執行 / L2 應用 / L3 軟實力 / L4 A·J·F） |
+| **論文** | AI 時代美術職能變化之探索性研究 |
+| **作者** | 李世彬（Lee Ben） |
+| **機構** | 華梵大學 美術與文創學系（跨智慧科技學系） |
+| **指導教授** | 唐政元 教授 |
+| **會議** | 2026 智慧生活科技與管理研討會（SLTM 2026） |
+| **聯絡** | benarcell@gmail.com |
+| **版本** | v1.0 |
+| **發布日期** | 2026-05-29 |
+| **Zenodo Concept DOI** | [10.5281/zenodo.20444031](https://doi.org/10.5281/zenodo.20444031) |
+| **Zenodo v1.0 DOI** | [10.5281/zenodo.20444032](https://doi.org/10.5281/zenodo.20444032) |
 
 ---
 
-## 二、檔案結構
+## ⚠️ 使用限制聲明（請先閱讀）
+
+**本資料集為探索性研究樣本（n=51），有以下重要限制與規範，使用前請務必了解：**
+
+### 🔴 樣本限制
+
+- 樣本數量：**51 筆**（現況 31 + 基線 20），屬**質性探索**範疇，**不具大規模統計代表性**
+- 取樣範圍：大中華地區（台灣為主）2025/5 – 2026/5
+- 抽樣方法：詳見 [METHODOLOGY.md](METHODOLOGY.md)，請務必閱讀後再行推論
+
+### 🟡 使用須知（依 CC BY 4.0 授權）
+
+| 您可以做 ✅ | 您不可以做 ❌ |
+|---|---|
+| 下載、複製、散布 | 嘗試逆向工程還原原始公司或職缺 |
+| 修改、改作、重組 | 在未閱讀 METHODOLOGY 情況下做大樣本推論 |
+| 商業使用 | 移除或偽造原作者署名 |
+| 在新研究中引用 | 未標註本資料集之 DOI 而再利用 |
+
+### 📝 引用要求
+
+**請在任何使用本資料集的論文、報告、簡報中標明來源：**
+
+```bibtex
+@dataset{lee_2026_jd_ajf,
+  author       = {李世彬 and Lee, Shih-Pin (Ben)},
+  title        = {JD Coded Dataset for AJF Framework Study},
+  year         = 2026,
+  publisher    = {Zenodo},
+  version      = {v1.0},
+  doi          = {10.5281/zenodo.20444031},
+  url          = {https://doi.org/10.5281/zenodo.20444031}
+}
+```
+
+中文引用格式：
 
 ```
-zenodo_pkg/
+李世彬 (2026)。JD Coded Dataset for AJF Framework Study (v1.0)
+[資料集]。Zenodo。https://doi.org/10.5281/zenodo.20444031
+```
+
+---
+
+## 📂 檔案結構
+
+```
+Talent-jd-dataset/
 ├── README.md                  ← 本文件
-├── CODEBOOK.md                ← 欄位定義與編碼規則
-├── METHODOLOGY.md             ← 取樣方法與分析步驟
+├── CODEBOOK.md                ← ⭐ 欄位定義與編碼規則
+├── METHODOLOGY.md             ← ⭐ 取樣方法與分析步驟
+├── APPENDIX_II_compliant.md   ← 論文附錄二 (合規版)
+├── CHANGELOG.md               ← 版本更新記錄
+├── LICENSE.txt                ← CC BY 4.0 授權全文
 ├── data/
-│   ├── jd_master_coded_v1.csv             ← 主資料集（合併 82 筆）
+│   ├── jd_master_coded_v1.csv             ← 主資料集
 │   ├── jd_master_coded_v1.json
-│   ├── jd_2025_2026_coded.csv             ← 主樣本（62 筆）
+│   ├── jd_2025_2026_coded.csv             ← 現況樣本 (31 筆)
 │   ├── jd_2025_2026_coded.json
-│   ├── jd_2023_2024_baseline_coded.csv    ← 基線對照（20 筆）
+│   ├── jd_2023_2024_baseline_coded.csv    ← 基線對照 (20 筆)
 │   └── jd_2023_2024_baseline_coded.json
 └── scripts/
-    ├── industry_mapping.py    ← 公司→產業類別映射規則（不含具體公司名稱）
+    ├── industry_mapping.py    ← 公司→產業類別映射（不含公司名）
     └── anonymize.py           ← 去識別化 ETL 程式
 ```
 
 ---
 
-## 三、資料使用條款
+## 🔒 隱私與合規
 
-### 3.1 授權
-
-本**編碼資料集**採用 **CC BY 4.0** 授權：
-
-- ✅ 可自由分享、改作、商用
-- ✅ 須註明引用本資料集（見下方引用格式）
-- ✅ 衍生作品須採相容授權
-
-### 3.2 引用格式
-
-```
-李世彬（2026）。〈感知覺醒於 AI 協作職能轉化中的角色：AJF 框架之
-探索性建構〉佐證資料集（v1.0）[資料集]。Zenodo。
-https://doi.org/[待 Zenodo 配發]
-
-Lee, B. (2026). Coded dataset for "The Role of Perceptual Awakening
-in AI-Collaborative Skill Transformation: An Exploratory Construction
-of the AJF Framework" (v1.0) [Data set]. Zenodo.
-https://doi.org/[to be assigned]
-```
-
----
-
-## 四、隱私與合規聲明
-
-### 4.1 原始資料不公開
+### 已去識別化處理
 
 本資料集為**研究者再加工後之編碼樣本**，**不含**下列原始資訊：
 
 - ❌ 公司名稱（以 12 類產業代碼取代）
 - ❌ 職缺完整文字 / 工作內容描述
 - ❌ 職缺原始連結（URL）
-- ❌ 來源平台名稱（以 5 類平台代碼取代）
+- ❌ 來源平台名稱（以平台屬性代碼取代）
 - ❌ 任何聯絡人個資（姓名、Email、電話）
 - ❌ 精確發布日期（僅保留年份）
 
-原始職缺文字與公司資訊為各來源平台所有，受該等平台服務條款及著作權法保護，**研究者保有原始紀錄於本地，不對外公開**。
+### 合規依據
 
-### 4.2 合規依據
+1. **平台服務條款**：不重新發布、不商業性散布原始職缺內容
+2. **著作權法**：採用「研究目的之合理使用」，僅公開編碼後之結構化結果
+3. **個資法**：未涉及任何自然人個資；公司資訊以類別代碼揭露
+4. **學術倫理**：研究結果可重現性以方法論說明 + 編碼資料達成
 
-本資料集之製作依循下列原則：
+### 申請查閱原始資料（同行驗證）
 
-1. **平台服務條款**：不重新發布、不商業性散布原始職缺內容。
-2. **著作權法**：採用「研究目的之合理使用」，僅公開編碼後之結構化結果。
-3. **個資法**：未涉及任何自然人個資；公司資訊以類別代碼揭露。
-4. **學術倫理**：研究結果之可重現性以**方法論說明 + 編碼資料**達成，不依賴原始文字之公開。
+若您為學術研究目的，須查閱原始資料以進行同行驗證：
 
-### 4.3 申請查閱原始資料
+- **Email**：benarcell@gmail.com
+- **主旨**：`[AJF Dataset Verification Request] 您的姓名 / 機構`
+- **需附**：研究計畫摘要、IRB 編號（若適用）、使用目的
 
-若您為學術研究目的，須查閱原始資料以進行同行驗證，請以下列方式聯絡作者：
-
-- Email：benarcell@gmail.com
-- 主旨：`[AJF Dataset Verification Request] 您的姓名 / 機構`
-- 需提供：研究計畫摘要、IRB 編號（若適用）、使用目的
-
-作者將於 14 日內回覆。經審核後，將以**保密同意書（NDA）**方式提供查驗管道，**不直接傳輸原始檔案**。
+作者將於 14 日內回覆。經審核後以**保密同意書（NDA）**方式提供查驗管道，**不直接傳輸原始檔案**。
 
 ---
 
-## 五、版本管理
+## 🔄 版本管理（三層架構）
 
-| 版本 | 日期 | 變更摘要 |
+| 層次 | 用途 | 連結 |
 |---|---|---|
-| v1.0 | 2026-05-29 | 首版發布 |
+| **GitHub** | 版本控制 + 開發歷史 | 本 Repo |
+| **Zenodo** | 學術引用（不變的 DOI） | [Concept DOI](https://doi.org/10.5281/zenodo.20444031) |
+| **pplx.app** | 互動式分析閱讀（個人開放） | (內部使用) |
 
-長期版本管理：本資料集於 **GitHub repo** 維護版本歷史，正式引用版本同步發布至 **Zenodo**（取得 DOI）。
+### 版本歷史
 
-- GitHub：[待補連結]
-- Zenodo DOI：[待配發]
+| 版本 | 日期 | DOI | 變更摘要 |
+|---|---|---|---|
+| v1.0 | 2026-05-29 | [zenodo.20444032](https://doi.org/10.5281/zenodo.20444032) | 首次發布 |
 
----
-
-## 六、相關文件
-
-- 論文 PDF：`SLTM2026_Lun-Wen-_v10.pdf`（請另行查閱會議論文集）
-- 編碼規則：`CODEBOOK.md`
-- 取樣方法：`METHODOLOGY.md`
+詳見 [CHANGELOG.md](CHANGELOG.md)
 
 ---
 
-## 七、致謝
+## 🛠 相關工具
 
-感謝唐政元教授之指導，以及華梵大學跨智慧科技學系提供之研究環境。本研究未接受任何商業組織之資金或資料贊助。
+- **合規檢查工具**：[Talent-tool-compliance-checker](https://github.com/shinpin/Talent-tool-compliance-checker)（私人）— 用於本資料集每次更新前的合規自動掃描
+
+---
+
+## 🙏 致謝
+
+感謝**唐政元教授**之指導，以及**華梵大學跨智慧科技學系**提供之研究環境。本研究未接受任何商業組織之資金或資料贊助。
+
+---
+
+## 📜 授權
+
+本資料集採用 [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) 授權。詳見 [LICENSE.txt](LICENSE.txt)。
