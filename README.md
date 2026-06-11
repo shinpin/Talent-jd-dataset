@@ -1,11 +1,23 @@
 # JD Coded Dataset for AJF Framework Study
 
 > **大中華區美術設計人才市場職缺編碼資料集 (2025-2026)**
-> JD × AJF 三維交叉比對 ｜ Talent- 人才策略系列 v1.0
+> JD × AJF 三維交叉比對 ｜ Talent- 人才策略系列 v3.0
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20444031.svg)](https://doi.org/10.5281/zenodo.20444031)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Status: v1.0](https://img.shields.io/badge/Status-v1.0-green.svg)]()
+[![Status: v3.0](https://img.shields.io/badge/Status-v3.0-green.svg)]()
+
+---
+
+## 📥 Quick Access / 快速下載
+
+> 審查委員、評審教授請由此直接取得論文與簡報
+
+| 項目 | 連結 | 說明 |
+|---|---|---|
+| 📄 **論文全文** | [下載 PDF](https://github.com/shinpin/Talent-jd-dataset/blob/main/paper/115076_%E6%9D%8E%E4%B8%96%E5%BD%AC_AI%E6%99%82%E4%BB%A3%E7%BE%8E%E8%A1%93%E8%81%B7%E8%83%BD%E8%AE%8A%E5%8C%96%E4%B9%8B%E6%8E%A2%E7%B4%A2%E6%80%A7%E7%A0%94%E7%A9%B6.pdf) | AI 時代美術職能變化之探索性研究（SLTM 2026） |
+| 📊 **研究簡報** | [下載 PPTX](https://github.com/shinpin/Talent-jd-dataset/blob/main/slides/%E7%B0%A1%E5%A0%B1_AI%20%E6%99%82%E4%BB%A3%20%E7%BE%8E%E8%A1%93%E8%81%B7%E8%83%BD%E8%AE%8A%E5%8C%96%20%E4%B9%8B%E6%8E%A2%E7%B4%A2%E6%80%A7%E7%A0%94%E7%A9%B6_Final_P23_0611_s.pptx) | SLTM 2026 發表簡報（P23） |
+| 🗃️ **研究資料集** | [Zenodo DOI](https://doi.org/10.5281/zenodo.20444031) | JD 編碼資料集 v3（含附錄 A、B） |
 
 ---
 
@@ -19,10 +31,10 @@
 | **指導教授** | 唐政元 教授 |
 | **會議** | 2026 智慧生活科技與管理研討會（SLTM 2026） |
 | **聯絡** | benarcell@gmail.com |
-| **版本** | v1.0 |
-| **發布日期** | 2026-05-29 |
+| **版本** | v3.0 |
+| **發布日期** | 2026-06-11 |
 | **Zenodo Concept DOI** | [10.5281/zenodo.20444031](https://doi.org/10.5281/zenodo.20444031) |
-| **Zenodo v1.0 DOI** | [10.5281/zenodo.20444032](https://doi.org/10.5281/zenodo.20444032) |
+| **Zenodo v3 DOI** | [10.5281/zenodo.20650060](https://doi.org/10.5281/zenodo.20650060) |
 
 ---
 
@@ -55,7 +67,7 @@
   title        = {JD Coded Dataset for AJF Framework Study},
   year         = 2026,
   publisher    = {Zenodo},
-  version      = {v1.0},
+  version      = {v3},
   doi          = {10.5281/zenodo.20444031},
   url          = {https://doi.org/10.5281/zenodo.20444031}
 }
@@ -64,7 +76,7 @@
 中文引用格式：
 
 ```
-李世彬 (2026)。JD Coded Dataset for AJF Framework Study (v1.0)
+李世彬 (2026)。JD Coded Dataset for AJF Framework Study (v3)
 [資料集]。Zenodo。https://doi.org/10.5281/zenodo.20444031
 ```
 
@@ -80,6 +92,10 @@ Talent-jd-dataset/
 ├── APPENDIX_II_compliant.md   ← 論文附錄二 (合規版)
 ├── CHANGELOG.md               ← 版本更新記錄
 ├── LICENSE.txt                ← CC BY 4.0 授權全文
+├── paper/
+│   └── 115076_李世彬_AI時代美術職能變化之探索性研究.pdf  ← ⭐ 論文全文
+├── slides/
+│   └── 簡報_AI 時代 美術職能變化 之探索性研究_Final_P23_0611_s.pptx  ← ⭐ 發表簡報
 ├── data/
 │   ├── jd_master_coded_v1.csv             ← 主資料集
 │   ├── jd_master_coded_v1.json
@@ -138,6 +154,8 @@ Talent-jd-dataset/
 
 | 版本 | 日期 | DOI | 變更摘要 |
 |---|---|---|---|
+| v3.0 | 2026-06-11 | [zenodo.20650060](https://doi.org/10.5281/zenodo.20650060) | 新增 SLTM 2026 論文全文 PDF 及發表簡報 |
+| v2.0 | 2026-06-08 | [zenodo.20587461](https://doi.org/10.5281/zenodo.20587461) | 新增附錄 A（跨職能驗證 N=62）、附錄 B（Persona×LLM 模擬） |
 | v1.0 | 2026-05-29 | [zenodo.20444032](https://doi.org/10.5281/zenodo.20444032) | 首次發布 |
 
 詳見 [CHANGELOG.md](CHANGELOG.md)
