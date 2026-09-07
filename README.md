@@ -177,3 +177,7 @@ Talent-jd-dataset/
 ## 📜 授權
 
 本資料集採用 [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) 授權。詳見 [LICENSE.txt](LICENSE.txt)。
+
+---
+**Consulting & collaboration:** [shinpin.github.io](https://shinpin.github.io) ｜ [LinkedIn](https://www.linkedin.com/in/benlee-starvision)
+*Shihpin (Ben) Lee — XR | AI | Product Strategy · CoMoment.io / FlyChair.Lab*
